@@ -9,7 +9,7 @@ console.log("Hello from Functions!");
 serve(async (req) => {
   const { name } = await req.json();
   const data = {
-    message: `Hej din lort ${name}!`,
+    message: `Hej ${name}!, dette er min Serverless funktion, som intet kan... :-)`,
   };
 
   return new Response(JSON.stringify(data), {
